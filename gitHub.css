@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(24.55deg,  #831075 0%, #140446 99% , #6f66b7 100% );
+}
+.bg #nav {
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg #nav .nav-items{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    
+}
+.bg #nav .nav-items .logo{
+    width: 60px;
+    height: 60px;
+}
+.bg #nav .nav-items .logo img{
+    width: 100%;
+    height:100%;
+    filter: invert(1);
+}
+.bg #nav .nav-items ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg #nav .nav-items ul li{
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg #nav .nav-items ul li i{
+    color: rgb(219, 215, 215);
+    margin-left: 3px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+.bg #nav .nav-items ul li a {
+    color:white;
+    font-size: 20px;
+}
+.bg #nav .nav-box{
+    width: 20%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bg #nav .nav-box button{
+    outline: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in-out;
+}
+.bg #nav .nav-box #sign-up{
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in-out;
+}
+.bg #nav .nav-box button:hover,.bg #nav .nav-box #sign-up:hover{
+    color: rgb(191, 182, 182);
+    border-color: rgb(191, 182, 182);
+}
+
+
+
+.middle-part{
+    width: 100%;
+    height: 700px;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    transform: translateY(10%);
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle-part .text{
+    margin-top: 100px;
+}
+.middle-part .text .hones h1{
+   display: none;
+}
+.middle-part .text .hones h1.active{
+  display: block;
+}
+.middle-part .text h1{
+    font-size:65px;
+    font-weight: bolder;
+}
+.middle-part .text p{
+    color: rgb(208, 141, 141);
+    font-size: 30px;
+    margin-top: 40px;
+    width:520px;
+}
+.middle-part .text .inputs{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:620px;
+    height: 100px;
+}
+
+.middle-part .text .inputs input{
+    width: 400px;
+    height: 55px;
+    font-size: 17px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.middle-part .text .inputs button{
+    width: 200px;
+    height: 55px;
+    font-size: 17px;
+    padding: 10px 20px;
+    outline: none;
+    background-color:rgb(172, 60, 249);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* margin-left:100px; */
+}
+
+
+
+
+.middle-part .animation {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+  #earth {
+      width: 450px;
+      height: 450px;
+      overflow: visible;
+      position: relative;
+      margin-top:100px;
+      /* left:200px; */
+      bottom: 50px;
+      background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+      border-radius: 50%;
+      background-size: 610px;
+      box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+      inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+      animation-name: rotate;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      -webkit-animation-name: rotate;
+      -webkit-animation-duration: 12s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+  }
+  
+  @keyframes rotate {
+      from { background-position: 0px 0px; }
+      to { background-position: 500px 0px; }
+  }
+  @-webkit-keyframes rotate {
+      from { background-position: 0px 0px; }
+      to { background-position: 500px 0px; }
+  }
